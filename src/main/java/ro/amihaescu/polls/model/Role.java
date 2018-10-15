@@ -3,6 +3,7 @@ package ro.amihaescu.polls.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Wither;
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
@@ -12,6 +13,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Wither
 public class Role {
 
     @Id
