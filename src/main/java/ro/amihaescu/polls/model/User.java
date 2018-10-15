@@ -2,10 +2,9 @@ package ro.amihaescu.polls.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.NaturalId;
-import ro.amihaescu.polls.DateAudit;
+import ro.amihaescu.polls.model.audit.DateAudit;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;

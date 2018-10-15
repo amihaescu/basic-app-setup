@@ -1,4 +1,4 @@
-package ro.amihaescu.polls;
+package ro.amihaescu.polls.model.audit;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
