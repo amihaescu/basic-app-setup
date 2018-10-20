@@ -1,8 +1,6 @@
 package ro.amihaescu.polls.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.NaturalId;
 import ro.amihaescu.polls.model.audit.DateAudit;
 
@@ -25,6 +23,7 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@RequiredArgsConstructor
 public class User extends DateAudit {
 
     @Id
@@ -32,20 +31,24 @@ public class User extends DateAudit {
     private Long id;
 
     @NotBlank
+    @NonNull
     @Size(max = 40)
     private String name;
 
     @NotBlank
+    @NonNull
     @Size(max = 15)
     private String username;
 
     @NaturalId
     @NotBlank
+    @NonNull
     @Size(max = 40)
     @Email
     private String email;
 
     @NotBlank
+    @NonNull
     @Size(max = 100)
     private String password;
 

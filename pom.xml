@@ -72,10 +72,10 @@
 			<version>1.16.16</version>
 		</dependency>
 		<!-- liquibase -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.liquibase</groupId>
 			<artifactId>liquibase-core</artifactId>
-		</dependency>
+		</dependency>-->
 
 	</dependencies>
 
