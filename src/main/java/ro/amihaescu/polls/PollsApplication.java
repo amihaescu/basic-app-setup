@@ -37,11 +37,11 @@ public class PollsApplication {
 		SpringApplication.run(PollsApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	CommandLineRunner commandLineRunner(){
 		return args -> {
 			roleRepository.save(new Role().withName(ROLE_USER));
 			roleRepository.save(new Role().withName(ROLE_ADMIN));
 		};
-	}
+	}*/
 }

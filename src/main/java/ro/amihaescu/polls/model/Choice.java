@@ -1,18 +1,19 @@
 package ro.amihaescu.polls.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "choices")
 @Data
 @RequiredArgsConstructor
+@NoArgsConstructor
 public class Choice {
 
     @Id

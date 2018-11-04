@@ -8,7 +8,8 @@ import javax.persistence.*;
 @Entity
 @Table( name = "votes", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
-
+                "poll_id",
+                "user_id"
         })
 })
 @Data

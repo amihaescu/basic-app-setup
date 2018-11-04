@@ -47,7 +47,7 @@ public class PollResponseMapper {
         }
 
         long totalVotes = pollResponse.getChoices()
-                .stream().mapToLong(ChoiceResponse::getId).sum();
+                .stream().mapToLong(ChoiceResponse::getVoteCount).sum();
 
         pollResponse.setTotalVotes(totalVotes);
         return pollResponse;
