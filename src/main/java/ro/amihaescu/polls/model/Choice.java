@@ -1,14 +1,18 @@
 package ro.amihaescu.polls.model;
 
 import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "choices")
 @Data
+@RequiredArgsConstructor
 public class Choice {
 
     @Id
@@ -16,6 +20,7 @@ public class Choice {
     private Long id;
 
     @NotBlank
+    @NonNull
     @Size(max = 40)
     private String text;
 
